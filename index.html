@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Vue Hello</title>
 </head>
 <body>
   <div id="root">
-    <h1>{{ message }}</h1>
-    <button @click="funzioneImg">Clicca per il meme!</button>
-    <div v-bind:class="mieClassi">
-      <img v-bind:src="img" >
+    <h1 class="title">{{ message }}</h1>
+    <div class="container">
+    <div class="button" @click="funzioneImg">Clicca per il meme!</div>
+      <img v-bind:src="img" v-bind:class="mieClassi">
     </div>
   </div>
 
