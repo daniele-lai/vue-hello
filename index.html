@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>Vue Hello</title>
 </head>
 <body>
   <div id="root">
     <h1>{{ message }}</h1>
-
-    <img v-bind:src="img">
+    <button @click="funzioneImg">Clicca per il meme!</button>
+    <div v-bind:class="mieClassi">
+      <img v-bind:src="img" >
+    </div>
   </div>
 
 
